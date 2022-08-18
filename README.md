@@ -25,10 +25,12 @@
       - venv\Scripts\activate 
       - для отключения окружение использовать обратную команду deactivate
     - также может помочь данный видос - https://www.youtube.com/watch?v=dVKpeQpU1Jc
-4) далее необходимо установить flask pip install flask 
-    - более подробно тут https://pythonru.com/uroki/2-ustanovka-flask
-    - после всего этого запускам тестовый файл hello.py командой python hello.py
-        если все успешно, запустится локальный сервер, подвердить это можно открыв в браузере адрес http://127.0.0.1:5000/
+4) далее необходимо установить по порядку:
+   1) flask pip install flask 
+   2) pip install flask-bootstrap
+       - более подробно тут https://pythonru.com/uroki/2-ustanovka-flask
+       - после всего этого запускам тестовый файл hello.py командой python hello.py
+           если все успешно, запустится локальный сервер, подвердить это можно открыв в браузере адрес http://127.0.0.1:5000/
 
 5) устанавливаем bootstrap
     - pip install flask-bootstrap
