@@ -1,12 +1,21 @@
+import sqlite3
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
+
+def get_db_connection():
+    conn = sqlite3.connect('database.db')
+    conn.row_factory = sqlite3.Row
+    return conn
 
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
 
 @app.route('/')
 def index():
-    return  render_template("base.html")
+    conn = get_db_connection()
+    posts = conn.execute('SELECT * FROM posts').fetchall()
+    conn.close()
+    return render_template('index.html', posts=posts)
 
 if __name__ == "__main__":
     app.run()
