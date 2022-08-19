@@ -29,7 +29,7 @@
    1) flask pip install flask 
    2) pip install flask-bootstrap
        - более подробно тут https://pythonru.com/uroki/2-ustanovka-flask
-       - после всего этого запускам тестовый файл hello.py командой python hello.py
+       - после всего этого запускам  файл main.py командой python main.py
            если все успешно, запустится локальный сервер, подвердить это можно открыв в браузере адрес http://127.0.0.1:5000/
 
 4) устанавливаем bootstrap
