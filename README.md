@@ -34,6 +34,11 @@
 
 4) устанавливаем bootstrap
     - pip install flask-bootstrap
+
+## подключение PostgreSQL к проекту
+1) необходимо установить модуль psycopg2:
+    - pip install psycopg2
+остальное будет дорабатываться по аналогии из статьи - https://proglib.io/p/kak-podruzhit-python-i-bazy-dannyh-sql-podrobnoe-rukovodstvo-2020-02-27
     
 ## как начать работу с проектом:
 
