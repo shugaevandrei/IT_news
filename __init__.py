@@ -3,8 +3,10 @@ from flask_bootstrap import Bootstrap
 from flask import Flask, render_template, request, url_for, flash, redirect
 from werkzeug.exceptions import abort #либа для отображения ошибки"404"
 
+DATABASE = '/var/www/ITnews/IT_news/database.db'
+
 def get_db_connection():
-    conn = sqlite3.connect('database.db')
+    conn = sqlite3.connect('DATABASE')
     conn.row_factory = sqlite3.Row
     return conn
 
