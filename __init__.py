@@ -84,7 +84,11 @@ def delete(id):
     conn.commit()
     conn.close()
     flash('"{}" was successfully deleted!'.format(post['title']))
-    return redirect(url_for('index'))   
+    return redirect(url_for('index')) 
+
+@app.route('/registration')
+def registration():
+    return render_template('registration.html')  
      
 if __name__ == "__main__":
     app.run()
