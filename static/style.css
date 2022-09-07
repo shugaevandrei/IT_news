@@ -22,3 +22,40 @@ body {
   a:active {
     color: #00d9ff;
   } 
+
+  .masonry-layout {
+    column-count: 3;
+    -webkit-column-count: 3;
+    column-gap: 0;
+    -webkit-column-gap: 0;
+  }
+  .masonry-layout__panel {
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    padding: 5px;
+  }
+  .masonry-layout__panel-content {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .bg--red {
+    background-color: transparent;
+    border: 2px solid rgb(255, 0, 0);
+  }
+  .bg--green {
+    background-color: transparent;
+    border: 2px solid rgb(0, 155, 13);
+  }
+  .bg--purple {
+    background-color: transparent;
+    border: 2px solid rgb(247, 0, 255);
+  }
+  .bg--orange {
+    background-color: transparent;
+    border: 2px solid rgb(255, 166, 0);
+  }
+  .bg--white {
+    hyphens: auto;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+  }
