@@ -2,10 +2,28 @@
 
 {% block content %}
     <h1>{% block title %} Top news {% endblock %}</h1>
+    <p>{{ temperature }} &#8451; </p> 
+    <div class="masonry-layout">
+        {% for index in range(count) %}
+        <div class="masonry-layout__panel">
+            <div class="masonry-layout__panel-content bg--green">
+                <a href= {{ links[index] }}>
+                    <h6> {{ title[index] }}</h6>
+                </a>
+                <p>
+                    <p>{{ desc[index] }}</p>
+                    <hr>
+                    <p>{{ datetime[index] }}</p>
+                </p>
+            </div>
+        </div>
+    {% endfor %} 
+    </div>
     <div class="masonry-layout">
     {% for post in posts %}
         <div class="masonry-layout__panel">
-            <div class="masonry-layout__panel-content bg--white">
+            <div class="masonry-layout__panel-content bg--green">
+
                 <a href="{{ url_for('post', post_id=post['id']) }}">
                     <h2>{{ post['title'] }}</h2>
                 </a>
