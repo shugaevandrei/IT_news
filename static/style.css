@@ -7,17 +7,17 @@ body {
 
 /* unvisited link */
 a:link {
-  color: red;
+  color: #17a2b8;
 }
 
 /* visited link */
 a:visited {
-  color: green;
+  color: #808080;
 }
 
 /* mouse over link */
 a:hover {
-  color: hotpink;
+  color: rgb(255, 255, 255);
 }
 
 /* selected link */
@@ -40,9 +40,9 @@ a:active {
   padding: 10px;
   border-radius: 10px;
 }
-.bg--red {
+.bg--black {
   background-color: transparent;
-  border: 2px solid rgb(255, 0, 0);
+  border: 2px solid  #808080;
 }
 .bg--green {
   background-color: transparent;
@@ -63,7 +63,7 @@ a:active {
   border: 2px solid rgb(255, 255, 255);
 }
 hr {
-  background-color: #17a2b8;
+  background-color: #808080;
   height: 1px;
   border: 0;
 }

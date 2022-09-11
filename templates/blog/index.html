@@ -6,7 +6,7 @@
     <div class="masonry-layout">
         {% for index in range(count) %}
         <div class="masonry-layout__panel">
-            <div class="masonry-layout__panel-content bg--green">
+            <div class="masonry-layout__panel-content bg--black">
                 <a href= {{ links[index] }}>
                     <h6> {{ title[index] }}</h6>
                 </a>
@@ -22,7 +22,7 @@
     <div class="masonry-layout">
     {% for post in posts %}
         <div class="masonry-layout__panel">
-            <div class="masonry-layout__panel-content bg--green">
+            <div class="masonry-layout__panel-content bg--black">
 
                 <a href="{{ url_for('post', post_id=post['id']) }}">
                     <h2>{{ post['title'] }}</h2>
